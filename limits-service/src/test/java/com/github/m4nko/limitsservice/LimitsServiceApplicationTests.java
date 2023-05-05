@@ -1,4 +1,4 @@
-package com.m4nko.microservices.limitsservice;
+package com.github.m4nko.limitsservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
