@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5da25bb9-d10c-489f-98b0-da0e35f52eee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Udemy-Microservices.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/src/main/java/com/github/m4nko/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="5da25bb9-d10c-489f-98b0-da0e35f52eee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +22,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/carlospereira/Projetos/Pessoais/Udemy-Microservices"
+    "last_opened_file_path": "/home/carlospereira/Projetos/Pessoais/Udemy-Microservices/spring-cloud-config-server"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
