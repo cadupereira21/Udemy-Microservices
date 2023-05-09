@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da25bb9-d10c-489f-98b0-da0e35f52eee" name="Changes" comment="">
+    <list default="true" id="5da25bb9-d10c-489f-98b0-da0e35f52eee" name="Changes" comment="Create: implemented feign to CurrencyConversionController">
+      <change afterPath="$PROJECT_DIR$/naming-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/src/main/java/com/github/m4nko/namingserver/NamingServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/src/test/java/com/github/m4nko/namingserver/NamingServerApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -14,6 +23,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +47,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2PNIFUjnRGwm1sz9rtbAenafiJF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,10 +58,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/carlospereira/Projetos/Pessoais/Udemy-Microservices-repos/Udemy-Microservices/currency-exchange-service"
+    "last_opened_file_path": "/home/carlospereira/Projetos/Pessoais/Udemy-Microservices-repos/Udemy-Microservices/naming-server",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CurrencyConversionServiceApplication">
+  <component name="RunManager" selected="Application.NamingServerApplication">
     <configuration name="CurrencyConversionServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.m4nko.currencyconversionservice.CurrencyConversionServiceApplication" />
       <module name="currency-conversion-service" />
@@ -82,13 +106,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NamingServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.m4nko.namingserver.NamingServerApplication" />
+      <module name="naming-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.m4nko.namingserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CurrencyExchangeServiceApplication8001" />
       <item itemvalue="Application.CurrencyConversionServiceApplication" />
+      <item itemvalue="Application.NamingServerApplication" />
       <item itemvalue="Application.CurrencyExchangeServiceApplication8000" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NamingServerApplication" />
         <item itemvalue="Application.CurrencyConversionServiceApplication" />
         <item itemvalue="Application.CurrencyExchangeServiceApplication8000" />
       </list>
@@ -103,6 +142,65 @@
       <option name="presentableId" value="Default" />
       <updated>1683291011834</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create: add CurrencyConversionController">
+      <created>1683642960318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683642960318</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create: implemented CurrencyConversion and CurrencyConversionController">
+      <created>1683643604535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683643604535</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update: implemented calculateConversion method to get values from currency-exchange">
+      <created>1683652717820</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683652717820</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create: implemented feign to CurrencyConversionController">
+      <created>1683653632687</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683653632687</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="currency-project" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create: add CurrencyConversionController" />
+    <MESSAGE value="Create: implemented CurrencyConversion and CurrencyConversionController" />
+    <MESSAGE value="Update: implemented calculateConversion method to get values from currency-exchange" />
+    <MESSAGE value="Create: implemented feign to CurrencyConversionController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create: implemented feign to CurrencyConversionController" />
   </component>
 </project>
