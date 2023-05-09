@@ -1,6 +1,8 @@
 package com.github.m4nko.currencyconversionservice.controller;
 
 import com.github.m4nko.currencyconversionservice.entity.CurrencyConversion;
+import com.github.m4nko.currencyconversionservice.proxy.CurrencyExchangeProxy;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +13,9 @@ import java.util.HashMap;
 
 @RestController
 public class CurrencyConversionController {
+
+    @Autowired
+    private CurrencyExchangeProxy proxy;
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}/quantity/{quantity}")
     public CurrencyConversion calculateConversion(@PathVariable String from,@PathVariable String to,@PathVariable BigDecimal quantity){
@@ -34,7 +39,23 @@ public class CurrencyConversionController {
                 quantity,
                 currencyConversion.getConversionMultiple(),
                 quantity.multiply(currencyConversion.getConversionMultiple()),
-                currencyConversion.getEnvironment()
+                currencyConversion.getEnvironment() + " rest template"
+        );
+    }
+
+    @GetMapping("/currency-exchange-feign/from/{from}/to/{to}/quantity/{quantity}")
+    public CurrencyConversion calculateConversionFeign(@PathVariable String from,@PathVariable String to,@PathVariable BigDecimal quantity){
+
+        CurrencyConversion currencyConversion = proxy.retrieveExchangeValue(from, to);
+
+        return new CurrencyConversion(
+                currencyConversion.getId(),
+                from,
+                to,
+                quantity,
+                currencyConversion.getConversionMultiple(),
+                quantity.multiply(currencyConversion.getConversionMultiple()),
+                currencyConversion.getEnvironment() + " feign"
         );
     }
 
