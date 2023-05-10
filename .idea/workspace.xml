@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5da25bb9-d10c-489f-98b0-da0e35f52eee" name="Changes" comment="Create: implemented feign to CurrencyConversionController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/home/carlospereira/Projetos/Pessoais/Udemy-Microservices-repos/Udemy-Microservices/api-gateway",
@@ -130,9 +132,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.NamingServerApplication" />
         <item itemvalue="Application.CurrencyConversionServiceApplication" />
         <item itemvalue="Application.CurrencyExchangeServiceApplication8000" />
+        <item itemvalue="Application.NamingServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +202,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create: add CurrencyConversionController" />
     <MESSAGE value="Create: implemented CurrencyConversion and CurrencyConversionController" />
     <MESSAGE value="Update: implemented calculateConversion method to get values from currency-exchange" />
