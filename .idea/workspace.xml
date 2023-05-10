@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5da25bb9-d10c-489f-98b0-da0e35f52eee" name="Changes" comment="Create: implemented feign to CurrencyConversionController">
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/github/m4nko/currencyexchangeservice/controller/CircuitBreakerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/github/m4nko/currencyexchangeservice/controller/CircuitBreakerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/github/m4nko/currencyexchangeservice/controller/CircuitBreakerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,9 +133,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CurrencyExchangeServiceApplication8000" />
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.NamingServerApplication" />
         <item itemvalue="Application.CurrencyConversionServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
